@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ashish Patel - Profile Page MCA NIT Agartala 2016</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all"> 
+<link rel="stylesheet" href="css/lightbox.css"> 
+<script src="js/jquery-2.2.3.min.js"></script> 
+<link href='//fonts.googleapis.com/css?family=Text+Me+One' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body onload="Captcha();">
+	<div class="top-nav">
+		<div class="container">
+			<div class="navbar-header logo">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					Menu
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="menu">
+					<ul class="nav navbar"> 
+						<li><a href="index.html" class="w3ls-hover"><span data-letters="Home">Home</span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#about" class="w3ls-hover"><span data-letters="About">About </span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#skill" class="w3ls-hover"><span data-letters="Skills">Skills</span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#experience" class="w3ls-hover"><span data-letters="Experience">Experience </span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#education" class="w3ls-hover"><span data-letters="Education">Education </span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#work" class="w3ls-hover"><span data-letters="Work">Work</span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#contact" class="w3ls-hover"><span data-letters="Contact">Contact </span></a></li> 
+						 
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="video" data-vide-bg="video/cv">  
+		<div class="container">
+			<div class="banner-text agileinfo-text">  
+				<h1 id="myname"></h1> 
+				<h6 id="title"></h6>
+				<h6 id="university"></h6>
+			</div>  
+		</div>	
+	</div>	
+	<script src="js/jquery.vide.min.js"></script>
+	<div class="modal fade modal-about" id="about" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content"> 
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">ABOUT ME</h4>
+				</div>
+				<div class="modal-body modal-spa">
+					<div class="about"> 
+						<div class="col-md-4 about-left ">
+							<img src="images/img1.jpg" class="img-responsive" alt=""/>
+						</div>
+						<div class="col-md-8 about-right wthree">
+							<h3>Hi, i'm <span id="name"></span></h3>
+							<h4 id="mytitle"></h4>
+							<ul class="address">
+								<li>
+									<ul class="agileits-address-text ">
+										
+									</ul>
+								</li>
+								<li>
+									<ul class="agileits-address-text">
+										<li><b>PHONE </b></li>
+										<li id="phone"></li>
+									</ul>
+								</li>
+								<li>
+									<ul class="agileits-address-text">
+										<li><b>ADDRESS </b></li>
+										<li id="address"></li>
+									</ul>
+								</li>
+								<li>
+									<ul class="agileits-address-text">
+										<li><b>E-MAIL </b></li>
+										<li id="email"></li>
+									</ul>
+								</li>
+								<li>
+									<ul class="agileits-address-text">
+										<li><b>WEBSITE </b></li>
+										<li id="website"></li>
+									</ul>
+								</li>
+							</ul> 
+						</div> 
+						<div class="clearfix"> </div> 
+						<div class="about-text agileits-w3layouts"> 
+							<p>I'm a web developer and search engine optimization professional living in Agartala, Tripura (west), India. Currently pursuing my Master of Computer Application at National Institute of Technology, Agartala. I spend my days with my hands in many different areas of web development from back end programming (PHP, Python, Ruby on Rails) to front end engineering (HTML, CSS and JQuery/Javascript), user experience and visual design.</p>
+							<p class="agile-br"> I'm extremely passionate about web development and design in all it's forms and would like to help small businesses and companies build and improve their online presence. Aside from web development, I enjoy spending my time with my family, traveling around the world and playing chess.  </p>
+							<p class="agile-br"><b>My Titles - </b><div class="btn-group"><button id="mca" onClick="myTitle('mca');" type="button" class="btn btn-default" >MCA</button>
+							<button id="bca" onClick="myTitle('bca');" type="button" class="btn btn-default">BCA</button></div></p>
+							<p class="agile-br" id="programs"></p>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modal-skills" id="skill" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content"> 
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">My Skills</h4>
+				</div>
+				<div class="modal-body modal-spa">
+					<div class="skills"> 
+						<div class="col-md-6 bar-grids">
+							<h4><span class="glyphicon glyphicon-cog"></span> Technical Skills </h4>
+							<h6>web development  <span> 85% </span></h6>
+							<div class="progress">
+								<div id="webdev" class="progress-bar progress-bar-striped active" style="">
+								</div>
+							</div>
+							<h6>HTML/CSS <span> 90% </span></h6>
+							<div class="progress  w3-agile">
+								<div id="htmlcss" class="progress-bar progress-bar-striped active" style="">
+								</div>
+							</div>
+							<h6>Javascript<span>80% </span></h6>
+							<div class="progress  w3-agile">
+								<div id="js" class="progress-bar progress-bar-striped active" style="">
+								</div>
+							</div>
+							<h6>PHP <span> 75% </span></h6>
+							<div class="progress  w3-agile">
+								<div id="php" class="progress-bar progress-bar-striped active" style="">
+								</div>
+							</div>
+						</div> 
+						<div class="col-md-6 bar-grids  w3-agile">
+							<h4><span class="glyphicon glyphicon-briefcase"></span> Professional Skills </h4>
+							<h6>Communication<span> 90% </span></h6>
+							<div class="progress">
+								<div id="comm" class="progress-bar progress-bar-striped active" style="">
+								</div>
+							</div>
+							<h6>Social media marketing<span> 85% </span></h6>
+							<div class="progress">
+								<div id="smm" class="progress-bar progress-bar-striped active" style="">
+								</div>
+							</div>
+							<h6>Leadership<span>90% </span></h6>
+							<div class="progress">
+								<div id="leadership" class="progress-bar progress-bar-striped active" style="">
+								</div>
+							</div>
+							<h6>Confidence<span>95% </span></h6>
+							<div class="progress prgs-w3agile-last">
+								<div id="confidence" class="progress-bar progress-bar-striped active" style="">
+								</div>
+							</div> 
+						</div>
+						<div class="clearfix"> </div>	
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modal-experience" id="experience" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content"> 
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">My Experience</h4>
+				</div>
+				<div class="modal-body modal-spa">
+					<div class="experience w3-agileits-info">  
+						<div class="experience-grids">
+							<div class="experience-left">
+								<h3>2016 - Now </h3>
+								<h5>National Institute of Technology, Agartala </h5>
+							</div>
+							<div class="experience-right">
+								<h4>Pursuing MCA</h4>
+								<p>Pursuing Master of Computer Applications at National Institute of Technology, Agartala to get a better grasp of various computer science areas including data structures, programming, and web technologies such as HTML/CSS, PHP, JavaScript, AJAX, SQL, Bootstrap web development.</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div> 
+						<div class="experience-grids experience-grids-btm">
+							<div class="experience-left">
+								<h3>2010 - 2016</h3>
+								<h5>Freelance </h5>
+							</div>
+							<div class="experience-right">
+								<h4>Web Designer & Developer</h4>
+								<p>Designed and Developed a large network of websites and hosted them on digitalocean and Amazon AWS platform. The website were developed using technologies such as WordPress, PHP, MySQL, HTML/CSS, Amazon AWS, Linux, Nginx</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="experience-grids w3-agileits">
+							<div class="experience-left">
+								<h3>2009 - 2010</h3>
+								<h5>CEDMAP Regional Centre </h5>
+							</div>
+							<div class="experience-right">
+								<h4>Computer Programming Tutor (part-time)</h4>
+								<p>Taught programming in C, C++ and Visual Basic to students pursuing for various Diploma Courses at a regional training institute affiliated to Centre for Entrepreneurship Development, Madhya Pradesh (CEDMAP).</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<!-- //modal-experience -->
+	<!-- modal-education -->
+	<div class="modal fade modal-experience" id="education" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content"> 
+				<div class="modal-header w3layouts">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">My Qualification</h4>
+				</div>
+				<div class="modal-body modal-spa">
+					<div class="experience">  
+						<div class="experience-grids">
+							<div class="experience-left">
+								<h3>2019<span>(pursuing)</span> </h3>
+								<h5>National Institute of Technology, Agartala</h5>
+							</div>
+							<div class="experience-right">
+								<h4>Master of Computer Applications</h4>
+								<p>Studying web technologies, data structures, programming languages, object-oriented programming, database management system, data mining and warehousing, algorithms, software engineering, computer network, management information system, operating system, artificial intelligence, compiler design, digital image processing, e-commerce, mobile computing, web development project work</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div> 
+                        <div class="experience-grids">
+							<div class="experience-left">
+								<h3>2016<span>(12 week certificate course)</span> </h3>
+								<h5> Harvard Univeristy (edx)</h5>
+							</div>
+							<div class="experience-right">
+								<h4>CS50 : Introduction to Computer Science</h4>
+								<p>Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming..</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div> 
+						<div class="experience-grids experience-grids-btm">
+							<div class="experience-left">
+								<h3>2015<span>(3 Years Course)</span></h3>
+								<h5> Barkatullah University, Bhopal</h5>
+							</div>
+							<div class="experience-right">
+								<h4>Bachelor of Computer Applications</h4>
+								<p>Studied computer science, programming, digital fundamentals, data structures, C, C++, JAVA, web designing, and network security (encryption algorithms) </p>
+							</div>
+							<div class="clearfix"> </div>
+						</div> 
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<!-- //modal-education -->
+	<!-- modal-gallery -->
+	<div class="modal fade modal-gallery" id="work" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content"> 
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">My Work</h4> 
+				</div>
+				<div class="modal-body modal-spa">
+					<div class="gallery"> 
+						<div class="gallery-row"> 
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g1.jpg" data-lightbox="example-set" data-title="Developing web applications from scratch.">
+										<img src="images/g1.jpg" class="img-responsive zoom-img" alt=""/>
+										<div class="view-caption">
+											<h5>View+</h5> 
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g2.jpg" data-lightbox="example-set" data-title="Implementation of Euclid's algorithm for greatest common divisor for CS50 harvard's course work.">
+										<img src="images/g2.jpg" class="img-responsive zoom-img" alt=""/>
+										<div class="view-caption">
+											<h5>View+</h5> 
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g3.jpg" data-lightbox="example-set" data-title="Recieved Microsoft's BingAds accredited professional certification for achievements on marketing web apps on the web.">
+										<img src="images/g3.jpg" class="img-responsive zoom-img" alt=""/>
+										<div class="view-caption">
+											<h5>View+</h5> 
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g4.jpg" data-lightbox="example-set" data-title="CS50 Harvard University's Semester long introduction to Computer Science.">
+										<img src="images/g4.jpg" class="img-responsive zoom-img" alt=""/>
+										<div class="view-caption">
+											<h5>View+</h5> 
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g5.jpg" data-lightbox="example-set" data-title="Always learning new technologies and new ways to improve things! Making the web a better place.">
+										<img src="images/g5.jpg" class="img-responsive zoom-img" alt=""/>
+										<div class="view-caption">
+											<h5>View+</h5> 
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g6.jpg" data-lightbox="example-set" data-title="Passionate about web development. I spend most of my time working on technologies such as HTML/CSS, PHP, JavaScript, Ruby on Rails, python, etc.">
+										<img src="images/g6.jpg" class="img-responsive zoom-img" alt=""/>
+										<div class="view-caption">
+											<h5>View+</h5> 
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g3.jpg" data-lightbox="example-set" data-title="Getting things done.">
+										<img src="images/g3.jpg" class="img-responsive zoom-img" alt=""/>
+										<div class="view-caption">
+											<h5>View+</h5> 
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g1.jpg" data-lightbox="example-set" data-title="Analyse and deliver quality products.">
+										<img src="images/g1.jpg" class="img-responsive zoom-img" alt=""/>
+										<div class="view-caption">
+											<h5>View+</h5> 
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g2.jpg" data-lightbox="example-set" data-title="Working on web development under the guidance of Prof. Suman Deb at CSE Dept, NIT Agartala.">
+										<img src="images/g2.jpg" class="img-responsive zoom-img" alt=""/>
+										<div class="view-caption">
+											<h5>View+</h5> 
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<script src="js/lightbox-plus-jquery.min.js"> </script>  
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modal-contact" id="contact" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content"> 
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Get In Touch</h4>
+				</div>
+				<div class="modal-body modal-spa">
+					<div class="contact"> 
+						<div class="contact-w3lsrow">
+							<div class="col-md-6 contact-left w3-agileits">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3649.3751401297623!2d91.4186872!3d23.8408091!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3753ec19aaa69b0d%3A0xf1c683a298e69e7b!2sNIT+Agartala!5e0!3m2!1sen!2s!4v1473628934960" allowfullscreen></iframe>
+							</div>
+							<div class="col-md-6 contact-right">
+								<form action="#" method="post">
+									<div class="styled-input agile-styled-input-top">
+										<input type="text" name="Name" required="">
+										<label>Name</label>
+										<span></span>
+									</div>
+									<div class="styled-input">
+										<input type="text" name="Email" required=""> 
+										<label>Email</label>
+										<span></span>
+									</div> 
+									<div class="styled-input">
+										<textarea name="Message" required></textarea>
+										<label>Message</label>
+										<span></span>
+									</div>
+                                    <div>
+                                    <label id="captchaText">Captcha Code: </label> <input type="button" id="refresh" value="refresh" onClick="Captcha();">
+                                    <span></span>
+                                    </div>
+                                    <div class="styled-input">
+                                    <input type="text" id="captchaInput" name="captcha" required="">
+                                    <label>Enter the captcha code:</label>
+                                    <span></span>
+                                    </div>	 
+									<input type="button" value="SEND" onClick="ValidCaptcha();">
+								</form>
+							</div>
+							<div class="clearfix"> </div>
+						</div>  
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<p>© 2016 NIT Agartala. All rights reserved | Design by Ashish Patel 16MCA012</p>
+		</div>
+	</div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

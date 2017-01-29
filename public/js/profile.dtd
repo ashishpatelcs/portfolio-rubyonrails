@@ -1,0 +1,34 @@
+<!ELEMENT Profile (About,Programs,Skills)>
+<!ELEMENT About (name,title,university,phone,email,website,address)>
+<!ELEMENT Programs (Program+)>
+<!ELEMENT Program (coursename,institute,year,cgpa,courses,labs)>
+<!ATTLIST Program
+enroll CDATA #REQUIRED
+>
+<!ELEMENT Skills (Technical,Professional)>
+<!ELEMENT Technical (webdevelopment,htmlcss,javascript,php)>
+<!ELEMENT Professional (communication,socialmedia,leadership,confidence)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT university (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT website (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT coursename (#PCDATA)>
+<!ATTLIST coursename
+acron CDATA #REQUIRED
+>
+<!ELEMENT institute (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT cgpa (#PCDATA)>
+<!ELEMENT courses (#PCDATA)>
+<!ELEMENT labs (#PCDATA)>
+<!ELEMENT webdevelopment (#PCDATA)>
+<!ELEMENT htmlcss (#PCDATA)>
+<!ELEMENT javascript (#PCDATA)>
+<!ELEMENT php (#PCDATA)>
+<!ELEMENT communication (#PCDATA)>
+<!ELEMENT socialmedia (#PCDATA)>
+<!ELEMENT leadership (#PCDATA)>
+<!ELEMENT confidence (#PCDATA)>

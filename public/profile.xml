@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Profile SYSTEM "profile.dtd">
+<Profile>
+    <About>
+        <name>Ashish Patel</name>
+        <title>Master of Computer Applications</title>
+        <university>National Institute of Technology, Agartala</university>
+        <phone>+91 895 932 9707</phone>
+        <email>ashishpatelmedia@icloud.com</email>
+        <website>www.ashishpatel.online</website>
+        <address>CSE Deptt. NIT Agartala, West Tripura, India</address>
+    </About>
+    <Programs>
+        <Program enroll="16MCA012">
+            <coursename acron="MCA">Master of Computer Applications</coursename>
+            <institute>National Institute of Technology, Agartala</institute>
+            <year>2019</year>
+            <cgpa>Pursuing</cgpa>
+            <courses>Web Technologies, Data and File Structures, Discrete Mathematical Structures, Digital Circuit and Logic Design</courses>
+            <labs>HTML and CSS, JavaScript, AJAX, Jquery, PHP, Data Structures using C (Arrays, Linked Lists, Stacks, Queues, Trees)</labs>
+        </Program>
+        <Program enroll="15162006233">
+            <coursename acron="BCA">Bachelor of Computer Applications</coursename>
+            <institute>Barkatullah University, Bhopal</institute>
+            <year>2015</year>
+            <cgpa>65.4%</cgpa>
+            <courses>Web Designing, Programming in C, C++ and Java, Data Structures and Algorithms, Computer Oriented Numerical Methods, Algorithm Design</courses>
+            <labs>HTML and CSS, C, C++, Java, Data Structures (Arrays, Linked Lists, Stacks and Queues)</labs>
+        </Program>
+    </Programs>
+    <Skills>
+        <Technical>
+            <webdevelopment>85%</webdevelopment>
+            <htmlcss>90%</htmlcss>
+            <javascript>80%</javascript>
+            <php>75%</php>
+        </Technical>
+        <Professional>
+            <communication>90%</communication>
+            <socialmedia>85%</socialmedia>
+            <leadership>90%</leadership>
+            <confidence>95%</confidence>
+        </Professional>
+    </Skills>
+</Profile>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Profile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="About" />
+        <xs:element ref="Programs" />
+        <xs:element ref="Skills" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="About">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name" />
+        <xs:element ref="title" />
+        <xs:element ref="university" />
+        <xs:element ref="phone" />
+        <xs:element ref="email" />
+        <xs:element ref="website" />
+        <xs:element ref="address" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Programs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="Program" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Program">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="coursename" />
+        <xs:element ref="institute" />
+        <xs:element ref="year" />
+        <xs:element ref="cgpa" />
+        <xs:element ref="courses" />
+        <xs:element ref="labs" />
+      </xs:sequence>
+      <xs:attribute name="enroll" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Skills">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Technical" />
+        <xs:element ref="Professional" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Technical">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="webdevelopment" />
+        <xs:element ref="htmlcss" />
+        <xs:element ref="javascript" />
+        <xs:element ref="php" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Professional">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="communication" />
+        <xs:element ref="socialmedia" />
+        <xs:element ref="leadership" />
+        <xs:element ref="confidence" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="name" type="xs:string" />
+  <xs:element name="title" type="xs:string" />
+  <xs:element name="university" type="xs:string" />
+  <xs:element name="phone" type="xs:string" />
+  <xs:element name="email" type="xs:string" />
+  <xs:element name="website" type="xs:string" />
+  <xs:element name="address" type="xs:string" />
+  <xs:element name="coursename" type="xs:string" />
+  <xs:element name="institute" type="xs:string" />
+  <xs:element name="year" type="xs:string" />
+  <xs:element name="cgpa" type="xs:string" />
+  <xs:element name="courses" type="xs:string" />
+  <xs:element name="labs" type="xs:string" />
+  <xs:element name="webdevelopment" type="xs:string" />
+  <xs:element name="htmlcss" type="xs:string" />
+  <xs:element name="javascript" type="xs:string" />
+  <xs:element name="php" type="xs:string" />
+  <xs:element name="communication" type="xs:string" />
+  <xs:element name="socialmedia" type="xs:string" />
+  <xs:element name="leadership" type="xs:string" />
+  <xs:element name="confidence" type="xs:string" />
+</xs:schema>
